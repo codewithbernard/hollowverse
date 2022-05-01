@@ -5,7 +5,7 @@ import React from "react";
 export const AppBar = () => {
   return (
     <nav>
-      <section className="py-6 flex flex-col items-center">
+      <section className="py-10 flex flex-col items-center mb-4">
         <div className="flex justify-center">
           <Link passHref href="/">
             <a>
@@ -24,7 +24,7 @@ export const AppBar = () => {
           {/* Search input */}
           <div>
             <input
-              className="bg-slate-100 rounded-lg mt-2 py-2 px-4 text-base focus:outline-none border-slate-100 border-2 focus:border-slate-200 transition-colors duration-300"
+              className="scale-90	text-base	text-black placeholder:text-slate-600 bg-gradient-to-r from-hollowTeal via-hollowPurple to-hollowOrange shadow-sm rounded-lg font-semibold mt-2 py-2 px-4 text-base focus:outline-none"
               placeholder="Search for a celebrity"
               type="search"
             />
