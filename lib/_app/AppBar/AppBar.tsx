@@ -5,7 +5,7 @@ import React from "react";
 export const AppBar = () => {
   return (
     <nav>
-      <section className="py-4 flex flex-col items-center">
+      <section className="py-6 flex flex-col items-center">
         <div className="flex justify-center">
           <Link passHref href="/">
             <a>

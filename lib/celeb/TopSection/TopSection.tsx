@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import React from 'react';
-import { sanityImage } from '~/lib/components/sanityio';
-import { useCelebContext } from '~/lib/components/StaticPropsContextProvider';
+import Image from "next/image";
+import React from "react";
+import { sanityImage } from "~/lib/components/sanityio";
+import { useCelebContext } from "~/lib/components/StaticPropsContextProvider";
 
 export const TopSection = () => {
   const context = useCelebContext();
@@ -9,10 +9,10 @@ export const TopSection = () => {
   const picture = context.celeb.picture || context.placeholderImage;
 
   return (
-    <div style={{ backgroundColor: '#FEF9E7' }}>
+    <div>
       <section>
-        <header>
-          <div>
+        <header className="flex flex-col items-center py-4  ">
+          <div className="rounded-full overflow-hidden w-32	h-32 shadow-md">
             <Image
               blurDataURL={picture.metadata.lqip}
               placeholder="blur"
@@ -24,10 +24,10 @@ export const TopSection = () => {
             />
           </div>
 
-          <h1>
-            <span>Religion, politics, and ideas of</span>
-            <br /> <span>{context.celeb.name}</span>
-          </h1>
+          <h1 className="mt-5 mb-1 text-2xl font-bold	">{context.celeb.name}</h1>
+          <h2 className="text-base font-normal text-slate-400">
+            Religion, politics, and ideas
+          </h2>
         </header>
       </section>
     </div>
