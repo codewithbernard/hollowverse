@@ -11,7 +11,7 @@ export const TopSection = () => {
   return (
     <div>
       <section>
-        <header className="flex flex-col items-center py-4  ">
+        <header className="flex flex-col items-center py-4 mb-2">
           <div className="rounded-full overflow-hidden w-32	h-32 shadow-md">
             <Image
               blurDataURL={picture.metadata.lqip}
